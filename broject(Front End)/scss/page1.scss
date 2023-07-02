@@ -1,0 +1,85 @@
+// font size
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@400;700&display=swap');
+
+// start number1 page  //
+// section1 //
+@import 'sections/color';
+@import 'sections/page1/section1/header';
+@import 'sections/page1/section1/main';
+
+// section2 blocks //
+@import 'sections/page1/section2/blocks';
+
+// section3 cloth //
+@import 'sections/page1/section3/cloth';
+
+// section4 service //
+@import'sections/page1/section4/service';
+
+// section5 Products  //
+@import'sections/page1/section5/product';
+
+// section6 newsletter  //
+@import'sections/page1/section6/newsletter';
+
+// section4 footer  //
+@import'sections/page1/section7/footer';
+
+// end number1 page  //
+
+// start page2  //
+@import 'page2';
+
+
+
+
+
+*{
+    color: $col1;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/sections/page1/section1/header/pic-con-media.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.num2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/sections/page1/section1/header/pic2-con-media.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;  
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: $col1;
+    &:hover{
+        color: $col3;
+    }
+}
+
+@mixin flex($jc:center , $ai:center , $g:0 , $wrap:wrap , $dir :row){
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    gap: $g;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+}
+  
+@mixin padding($val){
+  padding:$value
+}
+@mixin paddingS($top , $right , $bottom , $left){
+  padding-top: $top;
+  padding-right: $right ;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}

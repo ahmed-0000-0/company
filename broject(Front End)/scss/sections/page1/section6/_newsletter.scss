@@ -1,0 +1,118 @@
+.newsletter{
+    margin-top: 30px;
+    margin-bottom: 10vh;
+    img{
+        width: 1280px;
+        height: 242px;
+        
+    }
+    .receive{
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translate(103px, -160px);
+        h1{
+            color: $col1;
+            font-size: 29px;
+            width: 460px;
+            height: 72px;
+        }
+        input{
+            padding: 10px 20px;
+            color: $col2;
+            width: 315px;
+            height: 48px;
+            border-radius: 30px;
+            border: 0;
+            border: 1px $col3 solid;
+        }
+        button{
+            width: 119px;
+            height: 48px;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            border: 0;
+            color: $col1 ;
+            background-color:$col3 ;
+            &:hover{
+                color: $col3 ;
+                background-color:$col1 ;
+                border: 1px $col3 solid;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .newsletter{
+        height: 65vh;
+        margin-top: 0;
+        display: grid;
+        justify-content: center;
+        img{
+            width:85vw;
+            min-width:10vw;
+            height: 465px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+            
+        
+        .receive{
+            display:grid;
+            gap: 50px;
+            justify-content:center;
+            transform: translate(47px, -376px);
+            h1{
+                font-size: 20px;
+                width: 300px;
+                height: 100px;
+                text-align: center;
+
+            }
+            input{
+                margin-inline:auto;
+                text-align: center;
+
+            }
+            button{
+                margin: auto;
+
+            }
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1400px) {
+    .newsletter{
+        display: grid;
+        justify-content: center;
+        img{
+            max-width:90vw;
+            height: 242px;
+        }
+            
+        
+        .receive{
+            width: 75vw;
+            display: flex;
+            gap: 50px;
+            h1{
+                font-size: 20px;
+                text-align: center;
+
+            }
+            input{
+                
+                margin-inline:auto;
+                text-align: center;
+
+            }
+
+        }
+    }
+}

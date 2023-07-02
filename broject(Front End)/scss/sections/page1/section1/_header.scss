@@ -1,0 +1,946 @@
+.page1{
+    #carouselExampleFade{
+        .carousel-inner{
+            .carousel-item{
+                .slideShow{
+                    width: 100%;
+                    height: 100vh;
+                    position: relative;
+                    display:grid;
+                    place-items: center;
+                    .slide{
+                        width: 100%;
+                        &.show{
+                            opacity: 0;
+                        }
+                        .page{
+                            width: 100%;
+                            height: 100vh;
+            
+                            header{
+                                height: 15vh;
+                                .container{
+                                    top: 0;
+                                }
+                                .logo-dark{
+                                    display: none;
+                                }
+                                :hover{
+                                    color: $col3;
+                                }
+                                h3{
+                                    margin-left: 30px;
+                                    width: 100px;
+                                    height: 40px;
+                                    &:hover{
+                                        color: $col1;
+                                        
+                                    }
+                                    span{
+                                        color: $col3; 
+                                    }
+                                }
+                            
+                                nav{
+                                    display: flex;
+                                    
+                                    // margin-left: 200px;
+                                    .box{
+                                        display: flex;
+                                        gap: 50px;
+                                        // margin-left: 100px;
+                                        button{
+                                            background-color: transparent;
+                                            border:0;
+                                        }
+                                    }
+                                }
+                                .list{
+                                    position: absolute;
+                                    top: 0;
+                                    display: none;
+                                    button{
+                                        background-color: transparent;
+                                        border: 0;
+                                        
+                                    }
+                                    .offcanvas-end{
+                                        // width: 100vw;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    .offcanvas-header{
+                                        .profile-icon{
+                                            transform: translate(0);
+                                            i{
+                                                font-size: 27px;
+                                                color: $col2;
+                                                &:hover{
+                                                    color: $col3;
+                                                }
+                                            }
+                                        }
+                                        .btn-close{
+                                            color: $col2;
+                                            transform: translate(0);
+                                        }
+                                    }
+                                    .offcanvas-body{
+                                        .navbar-nav{
+                                            display: flex;
+                                            gap: 50px;
+                                            width: 85%;
+                                            margin: 70px auto;
+                                            font-size: 20px;
+                                            .nav-item{
+                                                width: 300px;
+                                                height: 50px;
+                                                .nav-link{
+                                                    padding: 10px 120px;
+                                                    background-color: $col3;
+                                                    border-radius:50px ;
+                                                    color: $col1;
+                                                    border: 1px solid $col3;
+            
+                                                    &:hover{
+                                                        background-color: $col1;
+                                                        color: $col3;
+                                                        border: 1px solid $col3;
+                                                    }                                        
+                                                }
+                                            }
+                                        }
+                                        .d-flex{
+                                            margin-left: 35px;
+                                            .form-control{
+                                                padding: 10px 50px;
+                                                width: 330px;
+                                            }
+                                            .btn{
+                                                padding: 10px 50px;
+                                                transform: translate(-215px, 100px);
+                                                font-size: 18px;
+                                                color:$col19;
+                                                border: $col19 solid 1px;
+                                                background-color:$col1;
+                                                border-radius: 10px;
+                                                &:hover{
+                                                    color:$col1;
+                                                    border: $col19 solid 1px;
+                                                    background-color:$col19;  
+                                                }
+                                            }
+            
+                                        }
+                                    }
+            
+                                }
+                                .boxs{
+                                    transform: translate(30px, 13px);
+                                    display: grid;
+                                    gap: 25px;
+                                    .active1 , .active2 , .active3{
+                                        width: 50px;
+                                        height: 3px;
+                                        &:hover{
+                                            background-color: $col3;
+                                        }
+                                        
+                                    }
+                                    .active1{
+                                        margin-left: 6px;
+                                        margin-right: 35px;
+                                    }
+                                    .active2{
+                                        margin-right: 34px;
+                                    }
+                                }
+                                
+                                #collapseMen , #collapseCart{
+                                    position: absolute;
+                                    top: 15vh;
+                                    left: 0;
+                                    z-index: 555;
+                                    width: 100% !important;
+                                }
+                                .icons-actions{
+                                    display: flex;
+                                    gap: 20px;
+                                    button{
+                                        background-color: transparent;
+                                        border: 0;
+                                    }
+                                
+                                
+                                }
+                                .card-link , .card-body {
+                                    height: 400px !important;
+                                    color: $col2;
+                                    .row{
+                                        margin-left:6vw;
+                                        height: 400px;
+                                        .col{
+                                            margin-top: 30px;
+                                            .boxs>a{
+                                                display: flex;
+                                                line-height: 10px;
+                                                font-size: 12px;
+                                                color:$col2;
+                                                &:hover{
+                                                    color: $col3;
+                                                }
+                                            }
+                                        }
+                                        .sale{
+                                            margin-top: 80px;
+                                        }
+                                    }
+                                    h3{
+                                        font-size: 14px;
+                                        width: 100px;
+                                        line-height: 40px;
+                                        color: $col2;
+                                        &:hover{
+                                            color: $col2;
+                                        }
+                                    }
+                                    
+                                }
+                                .card-body:hover{
+                                    color:$col2;
+                                }
+                
+                
+                            }
+                            .screen-succ{
+                                width: 100%;
+                                height: 100vh;
+                                background-color:$col8;
+                                transition: 1s;
+                                opacity: 0;
+                                display: grid;
+                                place-content: center;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                transform: translateX(100%);
+                                &.show {
+                                    opacity: 1;
+                                    z-index: 5;
+                                    transform: translateX(0);
+                                }
+                                .content {
+                                    background-color:$col12;
+                                    padding: 40px;
+                                    width: 320px;
+                                    height: 150px;
+                                    text-align: center;
+                                    h2{    
+                                        color: $col1;
+                                        margin-top: -15px;
+                                        font-size: 22px;
+                                    }
+                                    button{
+                                        width: 80px;
+                                        height: 50px;
+                                        margin-left: 25px;
+                                        background-color:$col3;
+                                        border: 0;
+                                        color: $col1;
+                                        border-radius: 25px;
+                                        margin-top: 20px;
+                                        font-size: 1rem;
+                                    }
+                                    .yesBtn{
+                                        &:hover{
+                                            background-color:$col1;
+                                            border: 2px solid $col3;
+                                            color: $col3;
+                                        }
+                                    }
+                                    .noBtnc{
+                                        background-color: $col2;
+                                        &:hover{
+                                            background-color:$col1;
+                                            border: 2px solid $col2;
+                                            color: $col2;
+                                        }
+                                    }
+                                }
+                            }
+                            // strat screen-profile
+                            .screen-profile {
+                                width: 100%;
+                                height: 100vh;
+                                background-color:$col8;
+                                transition: 1s;
+                                transform: translateX(100%);
+                                opacity: 0;
+                                display: grid;
+                                place-content: center;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                &.show {
+                                    transform: translateX(0%);
+                                    opacity: 1;
+                                    z-index: 5;
+                                }
+                                .content {
+                                    background-color:$col1;
+                                    padding: 40px;
+                                    width: 437px;
+                                    height:620px;
+                                    text-align: center;
+                                    margin-top: 60px;
+                                    h2{    
+                                        color: $col2;
+                                        margin-top: -28px;
+                                        font-size: 22px;
+                                    }
+                                    p{
+                                        color: $col9;
+                                        margin-top: 40px;
+                                        line-height: 25px;
+                                    }
+                                    
+                                    button.noBtn{
+                                                    position: relative;
+                                                    top: -30px;
+                                                    left: 175px;
+                                                    margin-top: 0px;
+                                                    font-size: 2rem;
+                                                    color: $col2;
+                                                    background-color: transparent;
+                                                    border: 0;
+                                                    &:hover{
+                                                        color: $col3;
+                                                    }
+                                        }
+                                    form{
+                                                margin-top: 40px;
+                                                display: grid;
+                                                gap: 20px;
+                                                .email , .password{
+                                                    max-width: 345px;
+                                                    height: 56px;
+                                                    border-radius: 40px;
+                                                    color: $col2;
+                                                    border: $col10 1px solid;
+                                                    padding: 0 30px;
+                                                    
+                                                }
+                                    }
+                                    .bolck{
+                                        display: flex;
+                                        gap: 75px;
+                                        margin-top: 30px;
+                                        .Square{
+                                            width: 20px;
+                                            height: 20px;
+                                            border:1px solid $col10 ;
+                                            cursor: pointer;
+                                        }
+                                        .signed-up{
+                                            display: flex;
+                                            gap: 20px;
+                                            h3{
+                                                color:$col2;
+                                                font-size: 13px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        .Forgot-password{
+                                            h3{
+                                                cursor: pointer;
+                                                color: $col9;
+                                                font-size: 13px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                
+                                    }
+                                    .social{
+                                        margin-top: 30px;
+                                        margin-bottom: 20px;
+                                        cursor: pointer;
+                                        display: flex;
+                                        gap:10px;
+                                        .face , .gmail{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            gap: 20px;
+                                            width: 167px;
+                                            height: 56px;
+                                            border-radius:40px;
+                                            color: $col1;
+                                            a{
+                                                font-size: 13px;
+                                            }
+                                        }
+                                        .face{
+                                            background-color: $col11;
+                                            &:hover{
+                                                background-color: $col1;
+                                                border: $col11 solid 1px;
+                                                .fa-brands{
+                                                    color: $col11;
+                                                }
+                                                a{
+                                                    color: $col2;
+                                                }
+                                            }
+                                        }
+                                        .gmail{
+                                            background-color:$col12;
+                                            &:hover{
+                                                background-color: $col1;
+                                                border: $col12 solid 1px;
+                
+                                                .fa-solid{
+                                                    color: $col12;
+                                                }
+                                                a{
+                                                    color: $col2;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .Sign-in{
+                                        cursor: pointer;
+                                        background-color: $col3;
+                                        border-radius: 40px;
+                                        width: 345px;
+                                        height: 56px;
+                                        display: grid;
+                                        button{
+                                            color: $col2;
+                                            background-color: transparent;
+                                            border:0;
+                
+                                        }
+                                        &:hover{
+                                            background-color: $col1;
+                                            border:$col3 solid 1px;
+                                            button{
+                                                color: $col3;
+                    
+                                            }
+                                        }
+                                    }
+                                    .sign-yet{
+                                        display: flex;
+                                        justify-content: center;
+                                        gap: 30px;
+                                        margin-top: 20px;
+                                        a{
+                                            color: $col2;
+                                            &:hover{
+                                                color: $col3;
+                                            }
+                                        }
+                
+                                    }
+                                }
+                            }            
+                            // end screen-profile
+                
+                
+                            // strat screen-create-account
+                            .screen-create-account {
+                                width: 100%;
+                                height: 100vh;
+                                background-color:$col8;
+                                transition: 1s;
+                                transform: translateX(100%);
+                                opacity: 0;
+                                display: grid;
+                                place-content: center;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                &.show {
+                                  transform: translateX(0%); 
+                                  opacity: 1;
+                                  z-index: 5;
+                                }
+                                .content {
+                                  background-color:$col1;
+                                  padding: 40px;
+                                  width: 437px;
+                                  height:769px;
+                                  text-align: center;
+                                  margin-top: 60px;
+                                  h2{    
+                                      color: $col2;
+                                      margin-top: -35px;
+                                      font-size: 20px;
+                                      line-height: 30px;
+                                  }
+                                  p{
+                                      color: $col9;
+                                      margin-top: 20px;
+                                      line-height: 25px;
+                                  }
+                                  
+                                  button.exit{
+                                      position: relative;
+                                      top: -30px;
+                                      left: 175px;
+                                      margin-top: 0px;
+                                      font-size: 2rem;
+                                      color: $col2;
+                                      background-color: transparent;
+                                      border: 0;
+                                      &:hover{
+                                          color: $col3;
+                                      }
+                                  }
+                                  form{
+                                      margin-top: 10px;
+                                      display: grid;
+                                      gap: 20px;
+                                      .email , .password , .text{
+                                          max-width: 345px;
+                                          height: 56px;
+                                          border-radius: 40px;
+                                          color: $col2;
+                                          border: $col10 1px solid;
+                                          padding: 0 30px;
+                                        }
+                                    }
+                                  .bolck{
+                                      display: flex;
+                                      gap: 75px;
+                                      margin-top: 15px;
+                                      margin-bottom: 40px;
+                                      .Square{
+                                          width: 20px;
+                                          height: 20px;
+                                          border:1px solid $col10 ;
+                                          cursor: pointer;
+                                      }
+                                      .Privacy{
+                                          display: flex;
+                                          gap: 15px;
+                                          h3{
+                                              width: 225px;
+                                              height: 32px;
+                                              color:$col2;
+                                              font-size: 13px;
+                                              font-weight: 400;
+                                          }
+                                      }
+                      
+                                  }
+                                  .Sign-up{
+                                      cursor: pointer;
+                                      background-color: $col3;
+                                      border-radius: 40px;
+                                      width: 345px;
+                                      height: 56px;
+                                      display: grid;
+                                      button{
+                                          color: $col2;
+                                          background-color: transparent;
+                                          border:0;
+                      
+                                      }
+                                      &:hover{
+                                          background-color: $col1;
+                                          border:$col3 solid 1px;
+                                          button{
+                                              color: $col3;
+                      
+                                          }
+                                      }
+                                  }
+                                  .sign-yet{
+                                      display: flex;
+                                      justify-content: center;
+                                      gap: 30px;
+                                      margin-top: 20px;
+                                      a{
+                                          color: $col2;
+                                          &:hover{
+                                            color: $col3;
+                                          }
+                                      }
+                                  }
+                                }
+                            }
+                
+                            // end screen-create-account
+                
+                            // strat screen-forgot
+                            .screen-forgot {
+                                width: 100%;
+                                height: 100vh;
+                                background-color:$col8;
+                                transition: 1s;
+                                transform: translateX(100%);
+                                opacity: 0;
+                                display: grid;
+                                place-content: center;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                &.show {
+                                  transform: translateX(0%);
+                                  opacity: 1;
+                                  z-index: 5;
+                                }
+                                .content {
+                                  background-color:$col1;
+                                  padding: 40px;
+                                  width: 437px;
+                                  height: 500px;
+                                  text-align: center;
+                                  margin-bottom: 50px;
+                                  h2{    
+                                      color: $col2;
+                                      margin-top: -35px;
+                                      font-size: 20px;
+                                      line-height: 30px;
+                                  }
+                                  p{
+                                      color: $col9;
+                                      margin-top: 20px;
+                                      line-height: 25px;
+                                  }
+                                  
+                                  button.exit-screen{
+                                      position: relative;
+                                      top: -30px;
+                                      left: 175px;
+                                      margin-top: 0px;
+                                      font-size: 2rem;
+                                      color: $col2;
+                                      background-color: transparent;
+                                      border: 0;
+                                      &:hover{
+                                          color: $col3;
+                                      }
+                                  }
+                                  
+                                  form{
+                                    margin-top: 40px;
+                                    .email{
+                                        width: 345px;
+                                        height: 56px;
+                                        border-radius: 40px;
+                                        color: $col2;
+                                        border: $col10 1px solid;
+                                        padding: 0 30px;
+                                    }
+                                  }
+                                  .more{
+                                      display: flex;
+                                      justify-content: center;
+                                      margin: 20px 0;
+                                      div{
+                                          width: 150px;
+                                          height: 1px;
+                                          background-color: $col6;
+                                          margin-top: 13px;
+                                        }
+                                      p{
+                                          margin: 0 10px;
+                                      }
+                                  }
+                                  form{
+                                    .number{
+                                        width: 345px;
+                                        height: 56px;
+                                        border-radius: 40px;
+                                        color: $col2;
+                                        border: $col10 1px solid;
+                                        margin-bottom: 25px;
+                                        padding: 0 30px;
+                                    }
+                                  }
+                                  .reset{
+                                      cursor: pointer;
+                                      background-color: $col3;
+                                      border-radius: 40px;
+                                      width: 345px;
+                                      height: 56px;
+                                      display: grid;
+                                      button{
+                                          color: $col2;
+                                          background-color: transparent;
+                                          border:0;
+                      
+                                      }
+                                      &:hover{
+                                          background-color: $col1;
+                                          border:$col3 solid 1px;
+                                          button{
+                                              color: $col3;
+                      
+                                          }
+                                      }
+                                  }  
+                                }
+                            }
+                            // end screen-forgot
+                            
+                        }        
+                        
+                    }  
+                    
+                }
+            }
+        }
+    }
+
+}    
+
+
+// screen sm
+@media (max-width:576px) {
+    .page1{
+        #carouselExampleFade{
+            .carousel-inner{
+                .carousel-item{
+                    .slideShow{
+                        .slide{
+                            .page{
+                                width: 100vw;
+                                header{
+                                    background-color: $col1;
+                                    .d-flex{
+                                        margin-left: 20px;
+                                    }
+                                    .logo-white{
+                                        display: none;
+                                    }
+                                    .logo-dark{
+                                        display: block;
+                                        
+                                    }
+                            
+                                    h3{
+                                        color: $col2;
+                                        &:hover{
+                                            color: $col2;
+                                            
+                                        }
+                                        span{
+                                            color: $col3;
+                                        }
+                                    }
+                                    nav.nav{
+                                       display: none; 
+                                    }
+                                    .list{
+                                        width: 0;
+                                        display: block;
+                                        button{
+                                            background-color: transparent;
+                                            border: 0;
+                                            transform: translate(80vw, 33px);
+                                            font-size: 15px;
+                                            color: $col2;
+                                            .navbar-toggler-icon{
+            
+                                                &:focus{
+                                                    background-color: transparent;
+                                                }
+                                                &:hover{
+                                                    color: $col3;
+                                                }
+                                            }
+                                            
+                                        }
+                                        .offcanvas-end{
+                                            // width: 100vw;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                
+                                    }
+                                    .boxs{
+                                        display: none;
+                                    }
+                                    .icons-actions{
+                                        color:$col2;
+                                        margin-right: 80px;
+                                        :hover{
+                                            color: $col3;
+                                        }
+                                        i{
+                                            color:$col2;
+                                        }
+                                        .profile-icon{
+                                            display: none;
+                                        }
+                                    }
+                                      
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+// screen md
+@media (min-width:576px) and (max-width:992px) {
+    .page1{
+        #carouselExampleFade{
+            .carousel-inner{
+                .carousel-item{
+                    .slideShow{
+                        .slide{
+                            .page{
+                                width: 95vw;
+                                header{
+                                    background-color: $col1;
+                                    .d-flex{
+                                        margin-left: 20px;
+                                    }
+                                    .logo-white{
+                                        display: none;
+                                    }
+                                    .logo-dark{
+                                        display: block;
+                                        
+                                    }
+                            
+                                    h3{
+                                        color: $col2;
+                                        &:hover{
+                                            color: $col2;
+                                            
+                                        }
+                                        span{
+                                            color: $col3;
+                                        }
+                                    }
+                                    nav.nav{
+                                       display: none; 
+                                    }
+                                    .list{
+                                        width: 0;
+                                        display: block;
+                                        button{
+                                            background-color: transparent;
+                                            border: 0;
+                                            transform: translate(80vw, 33px);
+                                            font-size: 15px;
+                                            color: $col2;
+                                            .navbar-toggler-icon{
+            
+                                                &:focus{
+                                                    background-color: transparent;
+                                                }
+                                                &:hover{
+                                                    color: $col3;
+                                                }
+                                            }
+                                            
+                                        }
+                                        .offcanvas-end{
+                                            // width: 100vw;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                
+                                    }
+                                    .boxs{
+                                        display: none;
+                                    }
+                                    .icons-actions{
+                                        color:$col2;
+                                        margin-right: 60px;
+                                        :hover{
+                                            color: $col3;
+                                        }
+                                        i{
+                                            color:$col2;
+                                        }
+                                        .profile-icon{
+                                            display: none;
+                                        }
+                                        
+                                    }
+                                      
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .page1{
+        .carousel-inner{
+            .carousel-item{
+                .slideShow{
+                    .slideShow{
+                        .slide{
+                            .page{
+                                header{
+                                    .boxs{
+                                        transform: translate(-255px, 13px);
+                                    }
+                                    .icons-actions{
+                                        margin-left: -60px;
+                                    }
+                                      
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+    .page1{
+        .carousel-inner{
+            .carousel-item{
+                .slideShow{
+                    .slideShow{
+                        .slide{
+                            .page{
+                                header{
+                                    .boxs{
+                                        transform: translate(-283px, 13px);
+                                    }
+                                      
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+

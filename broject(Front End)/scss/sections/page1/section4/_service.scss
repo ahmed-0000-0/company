@@ -1,0 +1,120 @@
+.service-our{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 50vh;
+    width: 100vw;
+    .header{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 29px;
+        color: $col2;
+    }
+    .service{
+        width: 100%;
+        display: flex;
+        margin-top: 70px;
+        .box{
+            width: 25%;
+            img{
+                cursor:pointer;
+            }
+            .information{
+                margin-top: 45px;
+                h3{
+                    font-size: 16px;
+                    color: $col2;
+                    margin-bottom: 25px;
+                }
+                p{
+                    font-size: 13px;
+                    width: 225px;
+                    color: $col15;
+                    margin-bottom: 0;
+                }
+                .Quality{
+                width: 245px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .service-our{
+        height: 135vh;
+        width: 95vw;
+        margin-top: 30px;
+        .header{
+            font-size: 22px;
+        }
+        .service{
+            flex-wrap: wrap;
+            .box{
+                width: 100%;
+                height: 25vh;
+                margin: auto;
+                margin-bottom: 50px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    margin:auto;
+                }
+                width: 100%;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                .information{
+                    margin:0;
+                    width: 300px;
+                    h3{
+                        font-size: 14px;
+                        margin-left: 100px;
+                    }
+                    p{
+                        font-size: 11px;
+                        margin-left: 70px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width:576px) and (max-width:992px) {
+    .service-our{
+        height: 75vh;
+        width: 100vw;
+        margin-top: 30px;
+        .service{
+            flex-wrap: wrap;
+            .box{
+                width: 50%;
+                height: 25vh;
+                margin: auto;
+                margin-bottom: 50px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    margin:auto;
+                }
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                .information{
+                    margin:0;
+                    width: 300px;
+                    h3{
+                        font-size: 14px;
+                        margin-left: 100px;
+                    }
+                    p{
+                        font-size: 11px;
+                        margin-left: 70px;
+                    }
+                }
+            }
+        }
+    }    
+}

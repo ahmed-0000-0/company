@@ -1,0 +1,163 @@
+.Products{
+    
+    // width: 100vw;
+    // background-color:$col1;
+    .container{
+        // display: flex;
+        // justify-content: center;
+        header{
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            h2{
+                margin-left:35px;
+                color: $col2;
+            }
+        }
+        .posts{
+            display: flex;
+            justify-content: center;
+            // width: 100%;
+            .pro{
+                // margin-left: 45px;
+                // transform: translate(-330px, 0);
+                width: 25%;
+                .descon{
+                    width: 49px;
+                    height: 30px;
+                    border-radius: 40px;
+                    background-color: $col14;
+                    color: $col1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translate(35px, 25px);
+                    -webkit-transform: translate(35px, 25px);
+                    -moz-transform: translate(35px, 25px);
+                    -ms-transform: translate(35px, 25px);
+                    -o-transform: translate(35px, 25px);
+                    // z-index: 1;
+                }
+                .col{
+                    height: 70vh;
+                    margin:0;
+                    // display: flex;
+                    // justify-content: center;
+                    .box{
+                        height: 385px;
+                        width: 271px;
+                        .pic1{
+                            margin-top: -30px;
+                            z-index: 0;
+                        }
+                        .box-body{
+                            height: 51px;
+                            h3{
+                                font-size: 16px;
+                                margin-top: 30px;
+                                height: 21px;
+                                color: $col2;
+                            }
+                            h2{
+                                font-size: 20px;
+                                color: $col2;
+                                margin-top: 10px;
+                            }
+                            .active{
+                                color: $col14;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    .Products{
+        width: 85vw;
+        height: 300vh;
+        margin: auto;
+
+        .container{
+            .posts{
+                flex-wrap: wrap;
+                .pro{
+                    height: 70vh;
+                    width: 100%;
+                    display: grid;
+                    justify-content: center;
+                    .col{
+
+                            .box{
+                                img{
+                                }
+                                .box-body{
+                                    h3{
+                                        margin-left: 20px;
+                                    }
+                                    h2{
+                                        margin-left: 20px;
+                                        
+                                    }
+                                    .active{
+                                        color: $col13;
+                                    }
+                                }
+                                &:nth-child(1){
+                                    margin-left:20px;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px) and (max-width:992px) {
+    .Products{
+        width: 85vw;
+        height: 165vh;
+        margin: auto;
+
+        .container{
+            .posts{
+                flex-wrap: wrap;
+                .pro{
+                    height: 70vh;
+                    width: 50%;
+                    display: grid;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .Products{
+        width: 98vw;
+        height: 160vh;
+        margin: auto;
+
+        .container{
+            .posts{
+                flex-wrap: wrap;
+                display: flex;
+                .pro{
+                    height: 70vh;
+                    width:33.3%;
+                    display: grid;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

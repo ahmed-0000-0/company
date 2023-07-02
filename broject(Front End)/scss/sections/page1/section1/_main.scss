@@ -1,0 +1,205 @@
+main{
+    display: flex;
+    .col{
+        gap: 20px;
+        width: 13px;
+        transform:translate(160px , 0px) ;
+        -webkit-transform:translate(160px , 0px) ;
+        -moz-transform:translate(160px , 0px) ;
+        -ms-transform:translate(160px , 0px) ;
+        -o-transform:translate(160px , 0px) ;
+        
+        h4{
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+    }
+    .skill-bar{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color:$col17;
+        height: 345px;
+        width:2px;
+        .skill-level{
+            background-color:$col1;
+            height: 285px;
+            width:2px;
+        }
+    }
+    .collection{
+        //margin-top: 100px;
+        margin-right: 400px;
+        transform: translate(0) , -50px;
+        -webkit-transform: translate(0) , -50px;
+        -moz-transform: translate(0) , -50px;
+        -ms-transform: translate(0) , -50px;
+        -o-transform: translate(0) , -50px;
+
+    }
+        h1{
+
+            width: 50%;
+            height: 90%;
+            font-size: 55px;
+            font-weight: bolder;
+            transform: translateY(25px);
+        }
+        .shop{
+            
+            img{
+                color: $col1;
+                position: absolute;
+                transform: translate(7px, 90px);
+                z-index: 2;
+            }
+            .circle{
+                width: 30px;
+                height: 30px;
+                background: $col3;
+                border-radius: 50%;
+                position: absolute;
+                transform: translate(0px, 82px);
+                z-index: 1;
+            }
+            p{
+                position: absolute;
+                transform: translate(50px, 82px);
+            }
+        } 
+    
+    
+    .service{
+        .boxes{
+            position: absolute;
+            bottom: 0;
+            width: 77%;
+            height: 130px;
+            margin-left: -102%;
+            background-color:$col1;
+            display: flex;
+            justify-content:center;
+            gap:30px;
+            border-radius:0px 70px 0 0 ;
+            .box{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                width: 20%;
+                gap: 30px;
+                &:nth-child(1){
+                    margin-left: 150px;
+                }
+                img{
+                    width: 39px;
+                    height: 39px;
+                }
+                h3{
+                    font-size:14px;
+                    margin-top:39px;
+                    color: $col2;
+                }
+                p{
+                    width: 139px;
+                    color: $col4;
+                    font-size: 12px;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        
+    }
+    
+}
+#carouselExampleFade{
+    .moven{
+        position: absolute;
+        left: 85%;
+        top: 85%;
+        button.next , button.prev{
+            position: absolute;
+            padding: 10px 15px;
+            cursor: pointer;
+            width: 50px;
+            height:50px;
+            background-color:$col5;
+            border:10px;
+            font-size: 22px;
+            margin-right: 15px;
+            i{
+                color:$col1;
+                
+            }
+            &:hover{
+                background-color:$col1;
+                i{
+                    color:$col2;
+                    
+                }
+            }
+
+        }
+        button.next {
+            right: 0;
+        }
+          button.prev {
+            left: 0;
+        }
+        
+
+    }
+}
+
+@media (max-width:992px) {
+    main{
+        .col{
+            display: none;
+        } 
+        .collection{
+            transform:translate(90px, 120px);
+            h1{
+                width:226px;
+                height: 141px;
+                font-size: 44px;
+            }
+            .shop{
+                transform: translate(0 , 10px);
+            }
+
+            
+        }   
+        .service{
+            display: none;
+            .boxes{
+                display: none;
+            }
+            
+        }
+    }
+    #carouselExampleFade{
+        .moven{
+            left: 55%;
+            button.next , button.prev{
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px){
+    main{
+        .collection{
+            transform: translate(150px, 0);
+
+            
+        } 
+        .service{
+            .moven{
+                right: 130px;
+            }
+        }
+    }
+    
+}
